@@ -10,11 +10,11 @@ if status is-interactive
   # Auto complete entire selection, then switch to normal mode
   bind -M insert -m default \ck forward-bigword force-repaint
   # -- NORMAL MODE --
-  bind -m default \$ end-of-line # SHIFT E
-  bind -m default \^ beginning-of-line # SHIFT B
+  bind -M default E end-of-line # SHIFT E
+  bind -M default B beginning-of-line # SHIFT B
   # -- VISUAL MODE --
-  bind -m visual \$ end-of-line
-  bind -m visual \^ beginning-of-line
+  bind -M visual E end-of-line
+  bind -M visual B beginning-of-line
 
   # -- ENV VARIABLES -- 
   set --export DENO_INSTALL "/home/honeypot/.deno"
