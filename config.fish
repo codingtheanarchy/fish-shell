@@ -20,6 +20,13 @@ if status is-interactive
   alias c "xclip"
   alias v "xclip -o"
 
+  # LSD - The list command on drugs (written in rust)
+  alias ls "lsd"
+  alias l='ls -l'
+  alias la='ls -a'
+  alias lla='ls -la'
+  alias lt='ls --tree'
+
   # -- ENV VARIABLES -- 
   set --export DENO_INSTALL "/home/honeypot/.deno"
   fish_add_path "$DENO_INSTALL/bin"
