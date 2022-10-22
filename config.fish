@@ -7,14 +7,18 @@ if status is-interactive
   bind -M insert -m default jk backward-char force-repaint
   # Auto complete one word (remain in insert mode)
   bind -M insert \cj forward-word
-  # Auto complete entire selection, then switch to normal mode
-  bind -M insert -m default \ck forward-bigword force-repaint
+  # Auto complete entire selection
+  bind -M insert \ck forward-bigword 
   # -- NORMAL MODE --
   bind -M default E end-of-line # SHIFT E
   bind -M default B beginning-of-line # SHIFT B
   # -- VISUAL MODE --
   bind -M visual E end-of-line
   bind -M visual B beginning-of-line
+
+  # copy/paste on the command line 
+  alias c "xclip"
+  alias v "xclip -o"
 
   # -- ENV VARIABLES -- 
   set --export DENO_INSTALL "/home/honeypot/.deno"
