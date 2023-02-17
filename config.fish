@@ -1,3 +1,4 @@
+
 if status is-interactive
   # Commands to run in interactive sessions can go here
 
@@ -30,5 +31,6 @@ if status is-interactive
   # -- ENV VARIABLES -- 
   set --export DENO_INSTALL "/home/honeypot/.deno"
   fish_add_path "$DENO_INSTALL/bin"
+  fish_add_path "$HOME/.cargo/env"
 end
 
